@@ -2,13 +2,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfólio — Julia Souza</title>
+
 <meta name="author" content="Julia Souza">
 <meta name="description" content="Portfólio pessoal de Julia Souza — estudante interessada em biotecnologia.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#main">Pular para o conteúdo principal</a>
+
 <div class="wrap">
 <header>
 <div class="brand">
