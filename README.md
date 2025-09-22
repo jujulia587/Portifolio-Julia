@@ -2,13 +2,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <meta name="author" content="Julia Souza">
 <meta name="description" content="Portfólio pessoal de Julia Souza — estudante interessada em biotecnologia.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="wrap">
 <header>
 <div class="brand">
@@ -17,8 +15,6 @@
 <div class="tag">Cursos concluídos em biotecnologia · Interesse em pesquisa e inovação</div>
 </div>
 </div>
-
-
 <nav aria-label="Navegação principal">
 <a href="#sobre">Sobre</a>
 <a href="#projetos">Projetos</a>
@@ -26,8 +22,6 @@
 <a href="#contato">Contato</a>
 </nav>
 </header>
-
-
 <main id="main">
 <section>
 <div class="card hero" id="sobre" tabindex="0">
@@ -40,11 +34,7 @@
 </div>
 </div>
 </div>
-
-
 <div class="space"></div>
-
-
 <div class="card" id="projetos" tabindex="0" aria-labelledby="projetos">
 <h2>Projetos</h2>
 <p class="muted">Seleção de estudos e atividades relacionadas à biotecnologia.</p>
@@ -53,8 +43,6 @@
 <h3>Estudo de Biotecnologia Aplicada</h3>
 <p>Curso introdutório com práticas laboratoriais e conceitos básicos da área.</p>
 </article>
-
-
 <article class="project" role="listitem" tabindex="0">
 <h3>Pesquisa Acadêmica</h3>
 <p>Participação em atividades de iniciação científica com foco em biotecnologia.</p>
