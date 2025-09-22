@@ -55,5 +55,4 @@
 
 
 <div class="card" id="resumo" tabindex="0">
-<h2>Resumo profissional</h2>
-```
+
