@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfólio — Julia Souza</title>
+  <meta name="author" content="Julia Souza">
+  <meta name="description" content="Portfólio pessoal de Julia Souza — estudante interessada em biotecnologia.">
+  <style>
+    :root{
+      --bg:#fcfbff; --card:#ffffff; --muted:#6b7280; --accent:#6d28d9; --accent-2:#06b6d4; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --container:1100px; --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0f172a;background:linear-gradient(180deg,#f7f7fb 0%, #eef2ff 100%)}
+    .wrap{max-width:var(--container);margin:32px auto;padding:20px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    h1{font-size:1.3rem;margin:0}
+    .tag{font-size:0.9rem;color:var(--muted)}
+
+    nav{display:flex;gap:8px;align-items:center}
+    nav a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--accent);font-weight:600}
+    nav a:focus{outline:3px solid rgba(109,40,217,0.18)}
+
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:20px}
+    @media (max-width:900px){main{grid-template-columns:1fr}nav{display:none}}
+
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+
+    .hero p{margin:6px 0;color:var(--muted);line-height:1.6}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;text-decoration:none;font-weight:700}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    @media (max-width:700px){.projects{grid-template-columns:1fr}}
+    .project{display:block;border-radius:12px;overflow:hidden;border:1px solid rgba(15,23,42,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.6));padding:12px}
+    .project h3{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    aside .section + .section{margin-top:14px}
+    .skill{display:flex;justify-content:space-between;align-items:center;margin:8px 0}
+    .meter{width:100%;height:10px;background:rgba(15,23,42,0.06);border-radius:20px;overflow:hidden}
+    .meter > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+
+    footer{text-align:center;margin:28px 0;color:var(--muted);font-size:0.9rem}
+
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:8px;top:8px;width:auto;height:auto;padding:8px;background:#111;color:#fff;border-radius:6px}
+
+    form label{display:block;font-weight:600;margin-bottom:6px}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);font-size:0.95rem}
+    form textarea{min-height:120px;resize:vertical}
+
+    .muted{color:var(--muted)}
+    .flex{display:flex;gap:10px;align-items:center}
+    .space{height:8px}
+
+    a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(6,182,212,0.18)}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo principal</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div>
+          <h1>Julia Souza — Estudante de Biotecnologia</h1>
+          <div class="tag">Cursos concluídos em biotecnologia · Interesse em pesquisa e inovação</div>
+        </div>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <div class="card hero" id="sobre" tabindex="0">
+          <div style="flex:1">
+            <h2>Olá! Eu sou a Julia 👋</h2>
+            <p>Sou estudante interessada em biotecnologia e já realizei cursos nessa área. Tenho paixão por ciência, inovação e desenvolvimento de soluções que podem transformar vidas.</p>
+            <div class="cta">
+              <a class="btn" href="#contato">Entrar em contato</a>
+              <a style="margin-left:10px;font-weight:700;color:var(--accent)" href="#resumo" aria-label="Ver resumo de Julia">Ver resumo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="card" id="projetos" tabindex="0" aria-labelledby="projetos">
+          <h2>Projetos</h2>
+          <p class="muted">Seleção de estudos e atividades relacionadas à biotecnologia.</p>
+          <div class="projects" role="list">
+            <article class="project" role="listitem" tabindex="0">
+              <h3>Estudo de Biotecnologia Aplicada</h3>
+              <p>Curso introdutório com práticas laboratoriais e conceitos básicos da área.</p>
+            </article>
+
+            <article class="project" role="listitem" tabindex="0">
+              <h3>Pesquisa Acadêmica</h3>
+              <p>Participação em atividades de iniciação científica com foco em biotecnologia.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="card" id="resumo" tabindex="0">
+          <h2>Resumo profissional</h2>
+          <p class="muted">Estudante de biotecnologia com cursos concluídos e grande interesse em pesquisa, inovação e desenvolvimento científico.</p>
+          <ul>
+            <li>Conhecimento básico em práticas laboratoriais.</li>
+            <li>Participação em cursos de biotecnologia e áreas correlatas.</li>
+            <li>Interesse em aprofundar estudos acadêmicos e práticos.</li>
+          </ul>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="card" id="contato" tabindex="0">
+          <h2>Contato</h2>
+          <p class="muted">Quer conversar comigo? Me mande uma mensagem — respondo em até 48h.</p>
+          <form aria-label="Formulário de contato de Julia" onsubmit="event.preventDefault(); enviarMensagem();">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" required aria-required="true" placeholder="Seu nome">
+
+            <label for="email">E‑mail</label>
+            <input id="email" name="email" type="email" required aria-required="true" placeholder="seu@exemplo.com">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required aria-required="true" placeholder="Escreva sua mensagem..."></textarea>
+
+            <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+              <button class="btn" type="submit">Enviar</button>
+              <button type="reset" style="padding:10px 12px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);background:white">Limpar</button>
+            </div>
+          </form>
+          <div id="status" aria-live="polite" style="margin-top:10px;color:var(--muted)"></div>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card section" id="habilidades" tabindex="0">
+          <h3>Habilidades</h3>
+          <div class="skill">
+            <div>Biotecnologia</div>
+            <div style="width:110px"><div class="meter" aria-hidden="true"><span style="width:80%"></span></div></div>
+          </div>
+          <div class="skill">
+            <div>Práticas laboratoriais</div>
+            <div style="width:110px"><div class="meter" aria-hidden="true"><span style="width:70%"></span></div></div>
+          </div>
+          <div class="skill">
+            <div>Pesquisa acadêmica</div>
+            <div style="width:110px"><div class="meter" aria-hidden="true"><span style="width:65%"></span></div></div>
+          </div>
+          <div class="skill">
+            <div>Comunicação científica</div>
+            <div style="width:110px"><div class="meter" aria-hidden="true"><span style="width:75%"></span></div></div>
+          </div>
+        </div>
+
+        <div class="card section" style="margin-top:14px" tabindex="0">
+          <h3>Disponibilidade</h3>
+          <p class="muted">Aberta a oportunidades de estágio e projetos acadêmicos na área de biotecnologia.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="muted">© Julia Souza — Portfólio criado com ❤️ — Assistência automatizada</div>
+    </footer>
+  </div>
+
+  <script>
+    function enviarMensagem(){
+      const nome = document.getElementById('nome').value;
+      const status = document.getElementById('status');
+      status.textContent = 'Obrigado, ' + (nome || 'amigo') + '! Sua mensagem foi recebida — vou responder em breve.';
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+          setTimeout(()=>{el.setAttribute('tabindex','-1');el.focus();},400);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
